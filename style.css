@@ -40,3 +40,124 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.doporucujeme {
+    color: whitesmoke;
+}
+
+
+.recept-nazev {
+
+}
+
+.hlavni-recept {
+    font-size: 28px;
+    min-height: 200px;
+    background-image: url("burger.jpg");
+    background-clip: border-box;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recept {
+    min-height: 90px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    border-top: solid white 0.5px;
+}
+.recept2 {
+    background-image: url("sushi.jpg"); 
+}
+
+.recept3 {
+    background-image: url("rajcata.jpg"); 
+}
+
+.recept4 {
+    background-image: url("kure.jpg"); 
+}
+
+.recept5 {
+    background-image: url("grilovani.jpg"); 
+ 
+}
+
+.recept-meta {
+    font-size: 14px;
+    font-weight: 400;
+}
+.recept-kategorie {
+    text-align: left;
+    float: left;
+}
+    
+.recept-komentare {
+        text-align: right;
+        float: right;
+}
+
+@media (min-width: 480px) {
+    .doporucujeme {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hlavni-recept {
+        min-height: 250px;
+        padding: 20px;
+        width: 100%;
+    }
+    .hlavni-recept h2 {
+        font-size: 36px;
+    }
+    .sloupec {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .recept {
+        min-height: 150px;
+        padding: 20px;
+    }
+    .recept h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 860px) {
+    .doporucujeme {
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+    .hlavni-recept {
+       min-height: 400px;
+       width: 33%;
+     }
+     .hlavni-recept h2 {
+        font-size: 48px;
+     }
+    .sloupec {
+        width: 33%;
+    }
+    .recept {
+        min-height: 200px;
+        border-left: solid white 0.5px;
+    }
+    .recept h2 {
+        font-size: 28px;
+    }
+
+    .recept2 .recept4 {
+        border-bottom: solid white 0.5px;
+    }
+}
